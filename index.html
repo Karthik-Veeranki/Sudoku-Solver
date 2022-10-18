@@ -5,14 +5,40 @@
   <script type="text/javascript" src="analytics.js"></script>
   <style type="text/css">
 
-    body { font-family: Calibri, sans-serif; }
-    #container { text-align: center }
-    table { border-collapse: collapse; font-size: 2em; margin: 0 auto; }
-    colgroup, tbody { border: solid medium; }
-    td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
-    button { margin-top: 15px; font-size: 1.5em; }
+    body 
+	{ 
+		font-family: Calibri, sans-serif; 
+	}
+	
     
-    padd{padding-bottom: 100px;}
+    table 
+	{ 
+		border-collapse: collapse; 
+		font-size: 2em; 
+		margin: 0 auto; 
+	}
+    colgroup, tbody 
+	{ 
+		border: solid medium; 
+	}
+    td 
+	{ 
+		border: solid thin; 
+		height: 1.4em; 
+		width: 1.4em; 
+		text-align: center; 
+		padding: 0; 
+	}
+    button 
+	{ 
+		margin-top: 15px; 
+		font-size: 1.5em; 
+	}
+    
+    padd
+	{
+		padding-bottom: 100px;
+	}
     ]
   </style>
 </head>
@@ -22,6 +48,12 @@
   <div id="container">
 
     <h1 class = "padd">Sudoku Solver</h1>
+	<h2 style = "center">Rules of the Game:</h2>
+	<h4>-> The below board contains a big board of size 9x9 partitioned into 9 small boxes each of size 3x3.</h4>
+	<h4>-> Only digits from 1 to 9 can be filled in the boxes.</h4>
+	<h4>-> Each of the 3x3 box should contain each digit 1 to 9 exactly once.</h4>
+	<h4>-> Each horizontal row can contain each digit 1 to 9 exactly once.</h4>
+	<h4>-> Each vertical column can contain each digit 1 to 9 exacly once.</h4>
 
     <table id="sudoku-board">
       
